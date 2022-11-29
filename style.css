@@ -1,0 +1,66 @@
+:root {
+    --primary-dark : #003300;
+    --primary-color : #1b5e20;
+    --background-color: #b2fab4;
+}
+
+body{
+    background-color: #b2fab4;
+}
+h1{
+    text-align: center;
+    color: #1b5e20;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#date-of-birth{
+    display: "block";
+    margin: 16px;
+    width: 50%;
+    height: 40px;
+    max-width: 256px;
+    align-self: center;
+
+}
+
+#lucky-number{
+    display: "block";
+    margin: 16px;
+    width: 50%;
+    height: 40px;
+    max-width: 256px;
+    align-self: center;
+}
+
+#check-lucky-dob{
+    display: "block";
+    margin: 16px;
+    width: 50%;
+    height: 40px;
+    max-width: 256px;
+    align-self: center;
+    background-color: #1b5e20;
+    color: antiquewhite;
+}
+
+#success{
+    margin: auto;
+    display: none;
+}
+
+#failure{
+    margin: auto;
+    display: none;
+}
+
+#output-info{
+    font-size: large;
+}
