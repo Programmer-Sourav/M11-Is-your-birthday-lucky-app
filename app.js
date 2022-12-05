@@ -13,9 +13,14 @@ var failureGif = document.querySelector("#failure")
 checkButton.addEventListener("click", checkIfBirthDateIsLucky)
 
 function checkIfBirthDateIsLucky(){
+    
     var sumOfDate = findSumOfTheDob(enteredDob)
     console.log("SD:"+sumOfDate)
     console.log("LN: "+enteredLuckyNumber.value)
+
+    if(enteredDob.value!=""){
+
+        console.log("Entered DOB "+enteredDob.value)
 
     if(enteredLuckyNumber.value>0){
 
@@ -33,6 +38,11 @@ function checkIfBirthDateIsLucky(){
  }
  else{
     outputInfo.innerText = "Try again! Please enter a valid lucky number..."
+ } 
+
+}
+else{
+    outputInfo.innerText = "Try again! Please enter a valid date..."
  } 
 
 }
